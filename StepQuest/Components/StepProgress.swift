@@ -37,6 +37,10 @@ struct StepProgress: View {
                     .font(.title3)
                     .offset(x: 10)
                     .tracking(-1)
+                Text("steps")
+                    .fontWeight(.regular)
+                    .offset(x: 10)
+                    .foregroundColor(Color.white.opacity(0.4))
             }
             .foregroundColor(Color.white)
             .fontWeight(.bold)

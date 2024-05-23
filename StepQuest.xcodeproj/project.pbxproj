@@ -18,6 +18,7 @@
 		82A2F2FD2BFFDCDA00C41ADD /* QuickActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F2FC2BFFDCDA00C41ADD /* QuickActions.swift */; };
 		82A2F2FF2BFFDDAA00C41ADD /* QuickAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F2FE2BFFDDAA00C41ADD /* QuickAction.swift */; };
 		82A2F3012BFFDE6000C41ADD /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F3002BFFDE6000C41ADD /* Quest.swift */; };
+		82A2F3042BFFDFE200C41ADD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F3032BFFDFE200C41ADD /* Home.swift */; };
 		82DF547E2BFA744F00588C5F /* StepQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547D2BFA744F00588C5F /* StepQuestApp.swift */; };
 		82DF54802BFA744F00588C5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547F2BFA744F00588C5F /* ContentView.swift */; };
 		82DF54842BFA744F00588C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DF54832BFA744F00588C5F /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		82A2F2FC2BFFDCDA00C41ADD /* QuickActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActions.swift; sourceTree = "<group>"; };
 		82A2F2FE2BFFDDAA00C41ADD /* QuickAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAction.swift; sourceTree = "<group>"; };
 		82A2F3002BFFDE6000C41ADD /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
+		82A2F3032BFFDFE200C41ADD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		82DF547A2BFA744F00588C5F /* StepQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DF547D2BFA744F00588C5F /* StepQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepQuestApp.swift; sourceTree = "<group>"; };
 		82DF547F2BFA744F00588C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		82A2F3022BFFDFAD00C41ADD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				82A2F3032BFFDFE200C41ADD /* Home.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		82DF54712BFA744F00588C5F = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +130,7 @@
 		82DF547C2BFA744F00588C5F /* StepQuest */ = {
 			isa = PBXGroup;
 			children = (
+				82A2F3022BFFDFAD00C41ADD /* Screens */,
 				82A2F2F12BFFD6B600C41ADD /* Domain */,
 				82A2F2E82BFFB83B00C41ADD /* Components */,
 				82DF547D2BFA744F00588C5F /* StepQuestApp.swift */,
@@ -222,6 +233,7 @@
 				82A2F2F42BFFD6C600C41ADD /* ButtonInfo.swift in Sources */,
 				82DF547E2BFA744F00588C5F /* StepQuestApp.swift in Sources */,
 				82A2F2F92BFFDAA300C41ADD /* CharacterType.swift in Sources */,
+				82A2F3042BFFDFE200C41ADD /* Home.swift in Sources */,
 				82A2F2FB2BFFDB9600C41ADD /* QuestHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
