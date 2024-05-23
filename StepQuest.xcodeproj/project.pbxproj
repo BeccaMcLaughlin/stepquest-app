@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82A2F2EA2BFFB85400C41ADD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F2E92BFFB85400C41ADD /* Button.swift */; };
+		82A2F2EC2BFFBBDB00C41ADD /* StepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F2EB2BFFBBDB00C41ADD /* StepProgress.swift */; };
+		82A2F2EE2BFFCCDD00C41ADD /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F2ED2BFFCCDD00C41ADD /* Background.swift */; };
 		82DF547E2BFA744F00588C5F /* StepQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547D2BFA744F00588C5F /* StepQuestApp.swift */; };
 		82DF54802BFA744F00588C5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547F2BFA744F00588C5F /* ContentView.swift */; };
 		82DF54842BFA744F00588C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DF54832BFA744F00588C5F /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82A2F2E92BFFB85400C41ADD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		82A2F2EB2BFFBBDB00C41ADD /* StepProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepProgress.swift; sourceTree = "<group>"; };
+		82A2F2ED2BFFCCDD00C41ADD /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		82DF547A2BFA744F00588C5F /* StepQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DF547D2BFA744F00588C5F /* StepQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepQuestApp.swift; sourceTree = "<group>"; };
 		82DF547F2BFA744F00588C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82A2F2E82BFFB83B00C41ADD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				82DF548D2BFA770F00588C5F /* QuestHistoryItem.swift */,
+				82DF548F2BFA873100588C5F /* QuestObjective.swift */,
+				82A2F2E92BFFB85400C41ADD /* Button.swift */,
+				82A2F2EB2BFFBBDB00C41ADD /* StepProgress.swift */,
+				82A2F2ED2BFFCCDD00C41ADD /* Background.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		82DF54712BFA744F00588C5F = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +73,9 @@
 		82DF547C2BFA744F00588C5F /* StepQuest */ = {
 			isa = PBXGroup;
 			children = (
+				82A2F2E82BFFB83B00C41ADD /* Components */,
 				82DF547D2BFA744F00588C5F /* StepQuestApp.swift */,
 				82DF547F2BFA744F00588C5F /* ContentView.swift */,
-				82DF548D2BFA770F00588C5F /* QuestHistoryItem.swift */,
-				82DF548F2BFA873100588C5F /* QuestObjective.swift */,
 				82DF54832BFA744F00588C5F /* Assets.xcassets */,
 				82DF54852BFA744F00588C5F /* Preview Content */,
 			);
@@ -143,9 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A2F2EA2BFFB85400C41ADD /* Button.swift in Sources */,
+				82A2F2EE2BFFCCDD00C41ADD /* Background.swift in Sources */,
 				82DF54902BFA873100588C5F /* QuestObjective.swift in Sources */,
 				82DF54802BFA744F00588C5F /* ContentView.swift in Sources */,
 				82DF548E2BFA770F00588C5F /* QuestHistoryItem.swift in Sources */,
+				82A2F2EC2BFFBBDB00C41ADD /* StepProgress.swift in Sources */,
 				82DF547E2BFA744F00588C5F /* StepQuestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

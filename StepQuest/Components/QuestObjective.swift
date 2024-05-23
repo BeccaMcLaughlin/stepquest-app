@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestObjective: View {
     let objective: String;
-    let character: String;
+    let character: String?;
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -38,11 +38,13 @@ struct QuestObjective: View {
                     .frame(width: 250)
                 Spacer()
             }
+            if let character = character {
                 Image(character)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 200, height: 100)
                     .offset(x: 50, y: 75)
+            }
         }
         .frame(height: 200)
         .clipped()

@@ -10,19 +10,22 @@ import SwiftData
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        ZStack {
+            Background()
+            
+            VStack() {
+                StepProgress(currentSteps: 100, totalSteps: 500)
                 Text("Hello, world!")
-                .font(.title)
-            HStack() {
-                Text("Allo there")
-                    .font(.subheadline)
-                Spacer()
-                Text("AMmm")
-                    .font(.subheadline)
+                    .font(.title)
+                HStack() {
+                    Text("Allo there")
+                        .font(.subheadline)
+                    Text("AMmm")
+                        .font(.subheadline)
                 }
             }
-        .padding()
         }
+    }
 }
 
 #Preview {
