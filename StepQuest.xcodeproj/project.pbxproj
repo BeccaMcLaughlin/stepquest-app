@@ -9,18 +9,20 @@
 /* Begin PBXBuildFile section */
 		82DF547E2BFA744F00588C5F /* StepQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547D2BFA744F00588C5F /* StepQuestApp.swift */; };
 		82DF54802BFA744F00588C5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547F2BFA744F00588C5F /* ContentView.swift */; };
-		82DF54822BFA744F00588C5F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF54812BFA744F00588C5F /* Item.swift */; };
 		82DF54842BFA744F00588C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DF54832BFA744F00588C5F /* Assets.xcassets */; };
 		82DF54872BFA744F00588C5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DF54862BFA744F00588C5F /* Preview Assets.xcassets */; };
+		82DF548E2BFA770F00588C5F /* QuestHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF548D2BFA770F00588C5F /* QuestHistoryItem.swift */; };
+		82DF54902BFA873100588C5F /* QuestObjective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF548F2BFA873100588C5F /* QuestObjective.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82DF547A2BFA744F00588C5F /* StepQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DF547D2BFA744F00588C5F /* StepQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepQuestApp.swift; sourceTree = "<group>"; };
 		82DF547F2BFA744F00588C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		82DF54812BFA744F00588C5F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		82DF54832BFA744F00588C5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82DF54862BFA744F00588C5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82DF548D2BFA770F00588C5F /* QuestHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestHistoryItem.swift; sourceTree = "<group>"; };
+		82DF548F2BFA873100588C5F /* QuestObjective.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestObjective.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			children = (
 				82DF547D2BFA744F00588C5F /* StepQuestApp.swift */,
 				82DF547F2BFA744F00588C5F /* ContentView.swift */,
-				82DF54812BFA744F00588C5F /* Item.swift */,
+				82DF548D2BFA770F00588C5F /* QuestHistoryItem.swift */,
+				82DF548F2BFA873100588C5F /* QuestObjective.swift */,
 				82DF54832BFA744F00588C5F /* Assets.xcassets */,
 				82DF54852BFA744F00588C5F /* Preview Content */,
 			);
@@ -140,8 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82DF54902BFA873100588C5F /* QuestObjective.swift in Sources */,
 				82DF54802BFA744F00588C5F /* ContentView.swift in Sources */,
-				82DF54822BFA744F00588C5F /* Item.swift in Sources */,
+				82DF548E2BFA770F00588C5F /* QuestHistoryItem.swift in Sources */,
 				82DF547E2BFA744F00588C5F /* StepQuestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
