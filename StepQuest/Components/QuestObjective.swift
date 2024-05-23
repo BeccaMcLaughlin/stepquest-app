@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestObjective: View {
     let objective: String;
-    let character: String?;
+    let character: CharacterType?;
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -39,7 +39,7 @@ struct QuestObjective: View {
                 Spacer()
             }
             if let character = character {
-                Image(character)
+                Image(character.rawValue)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 200, height: 100)
@@ -59,5 +59,5 @@ struct QuestObjective: View {
 Current objective:
 
 Find a lost toy for a child.
-""", character: "wizard")
+""", character: CharacterType.townfolk1)
 }

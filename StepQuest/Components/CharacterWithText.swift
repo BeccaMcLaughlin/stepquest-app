@@ -1,13 +1,13 @@
 import SwiftUI
 
 struct CharacterWithText: View {
-    let character: String
+    let character: CharacterType
     let text: String
     let buttons: [ButtonInfo]
 
     var body: some View {
         VStack {
-            Image(character)
+            Image(character.rawValue)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 400.0)
@@ -30,7 +30,7 @@ struct CharacterWithText: View {
     ZStack {
         Color.blue.edgesIgnoringSafeArea(.all)
         CharacterWithText(
-            character: "wizard",
+            character: CharacterType.wizard,
             text: """
     A young child has lost their favorite toy, a wooden dragon, near the whispering willow tree about 400 steps from the village center. Can you help them find it?
     """,

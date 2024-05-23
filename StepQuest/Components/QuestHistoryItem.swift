@@ -11,7 +11,7 @@ struct QuestHistoryItem: View {
     let questTitle: String;
     let questSteps: String;
     let questCompleted: String;
-    let character: String;
+    let character: CharacterType;
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
@@ -45,7 +45,7 @@ struct QuestHistoryItem: View {
                 .frame(width: 250)
                 Spacer()
             }
-            Image(character)
+            Image(character.rawValue)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 200, height: 100)
@@ -60,5 +60,5 @@ struct QuestHistoryItem: View {
 }
 
 #Preview {
-    QuestHistoryItem(questTitle: "The Lost Dragon", questSteps: "500", questCompleted: "24 Dec 2024", character: "wizard")
+    QuestHistoryItem(questTitle: "The Lost Dragon", questSteps: "500", questCompleted: "24 Dec 2024", character: CharacterType.townfolk2)
 }
