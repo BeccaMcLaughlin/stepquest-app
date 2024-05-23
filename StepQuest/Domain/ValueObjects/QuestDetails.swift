@@ -8,7 +8,8 @@
 import Foundation
 
 struct QuestDetails {
+    let title: String;
     let objective: String;
     let totalSteps: Int;
-    let Character: String;
+    let character: CharacterType;
 }

@@ -14,19 +14,14 @@ struct ContentView: View {
             Background()
             
             VStack() {
+                QuestHeader(header: nil)
                 StepProgress(currentSteps: 100, totalSteps: 500)
-                Text("Hello, world!")
-                    .font(.title)
-                HStack() {
-                    Text("Allo there")
-                        .font(.subheadline)
-                    Text("AMmm")
-                        .font(.subheadline)
-                }
+                Spacer()
             }
         }
     }
 }
+
 
 #Preview {
     ContentView()
