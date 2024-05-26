@@ -8,25 +8,32 @@
 import SwiftUI
 
 struct Home: View {
-    let currentQuest: Quest;
+    @EnvironmentObject var questStore: QuestStore
     let currentSteps: Int;
-
+    
     var body: some View {
-        VStack() {
-            QuestHeader(header: currentQuest.details.title)
-            StepProgress(currentSteps: currentSteps, totalSteps: currentQuest.details.totalSteps)
-            Spacer()
-            QuickActions(currentQuest: currentQuest)
+        ZStack {
+            Background()
+            VStack() {
+                QuestHeader(header: questStore.currentQuest?.details.title)
+                StepProgress(currentSteps: currentSteps, totalSteps: questStore.currentQuest?.details.totalSteps ?? 0)
+                Spacer()
+                QuickActions()
+            }
         }
     }
 }
 
 #Preview {
-    ZStack {
-        Background()
-        Home(
-            currentQuest: Quest(id: "test", details: QuestDetails(title: "Fungus Foraging", objective: "Test", totalSteps: 500, character: CharacterType.wizard)),
-            currentSteps: 258
-        )
-    }
+    let questStore: QuestStore = {
+        let store = QuestStore()
+        store.setCurrentQuest(Quest(
+            id: "1",
+            details: QuestDetails(title: "Fungus Foraging", objective: "Walk 500 steps to find fungus", totalSteps: 500, character: CharacterType.townfolk1),
+            completedDate: nil
+        ))
+        return store
+    }()
+    
+    return Home(currentSteps: 258).environmentObject(questStore)
 }

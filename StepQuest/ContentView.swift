@@ -9,16 +9,14 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    @StateObject private var questStore = QuestStore()
+    
     var body: some View {
-        ZStack {
-            Background()
-            
-            VStack() {
-                QuestHeader(header: nil)
-                StepProgress(currentSteps: 100, totalSteps: 500)
-                Spacer()
-            }
+        NavigationStack {
+            Home(currentSteps: 0)
         }
+        .navigationTitle("Quests")
+        .environmentObject(questStore)
     }
 }
 

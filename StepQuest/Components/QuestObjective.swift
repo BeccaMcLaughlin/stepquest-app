@@ -27,15 +27,19 @@ struct QuestObjective: View {
             
             // Text
             HStack {
-                Text(objective)
+                VStack(alignment: .leading) {
+                    Text("Current objective:")
                     .font(.title)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .padding(.all, 10)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    .multilineTextAlignment(.leading)
-                    .lineLimit(nil)
-                    .frame(width: 250)
+                    Spacer()
+                        .frame(height: 10.0)
+                    Text(objective)
+                        .font(.title2)
+                        .lineLimit(nil)
+                }
+                .frame(width: 250)
+                .padding(.all, 10)
+                .fontWeight(.semibold)
+                .foregroundColor(.white)
                 Spacer()
             }
             if let character = character {
@@ -55,9 +59,5 @@ struct QuestObjective: View {
 }
 
 #Preview {
-    QuestObjective(objective: """
-Current objective:
-
-Find a lost toy for a child.
-""", character: CharacterType.townfolk1)
+    QuestObjective(objective: "Find a lost toy for a child.", character: CharacterType.townfolk1)
 }

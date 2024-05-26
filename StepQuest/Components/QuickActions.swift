@@ -8,21 +8,33 @@
 import SwiftUI
 
 struct QuickActions: View {
-    let currentQuest: Quest;
+    @EnvironmentObject var questStore: QuestStore
+    
     var body: some View {
         VStack {
-            QuestObjective(objective: currentQuest.details.title, character: currentQuest.details.character)
+            QuestObjective(objective: questStore.currentQuest?.details.objective ?? "None", character: questStore.currentQuest?.details.character ?? CharacterType.wizard)
             HStack {
                 QuickAction(text: "New quest")
-                QuickAction(text: "Quest history")
+                NavigationLink {
+                    QuestHistory()
+                } label: {
+                    QuickAction(text: "Quest history")
+                }
             }
         }.padding()
     }
 }
 
 #Preview {
-    QuickActions(
-        currentQuest: Quest(id: "test", details: QuestDetails(title: "Fungus Foraging", objective: "Test", totalSteps: 500, character: CharacterType.wizard))
-    )
+    let questStore: QuestStore = {
+        let store = QuestStore()
+        store.setCurrentQuest(Quest(
+            id: "1",
+            details: QuestDetails(title: "Fungus Foraging", objective: "Test", totalSteps: 500, character: CharacterType.townfolk1),
+            completedDate: nil
+        ))
+        return store
+    }()
+    return QuickActions().environmentObject(questStore)
 }
 

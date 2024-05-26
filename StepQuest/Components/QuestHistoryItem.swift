@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestHistoryItem: View {
     let questTitle: String;
-    let questSteps: String;
+    let questSteps: Int;
     let questCompleted: String;
     let character: CharacterType;
     
@@ -34,7 +34,7 @@ struct QuestHistoryItem: View {
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
-                    Text(questSteps + " steps")
+                    Text(String(questSteps) + " steps")
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                     Text("Completed: " + questCompleted)
@@ -60,5 +60,5 @@ struct QuestHistoryItem: View {
 }
 
 #Preview {
-    QuestHistoryItem(questTitle: "The Lost Dragon", questSteps: "500", questCompleted: "24 Dec 2024", character: CharacterType.townfolk2)
+    QuestHistoryItem(questTitle: "The Lost Dragon", questSteps: 500, questCompleted: "24 Dec 2024", character: CharacterType.townfolk2)
 }

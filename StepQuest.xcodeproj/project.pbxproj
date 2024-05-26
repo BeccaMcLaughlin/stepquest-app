@@ -19,6 +19,8 @@
 		82A2F2FF2BFFDDAA00C41ADD /* QuickAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F2FE2BFFDDAA00C41ADD /* QuickAction.swift */; };
 		82A2F3012BFFDE6000C41ADD /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F3002BFFDE6000C41ADD /* Quest.swift */; };
 		82A2F3042BFFDFE200C41ADD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F3032BFFDFE200C41ADD /* Home.swift */; };
+		82AEFC0C2C03285400C02D3D /* QuestHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC0B2C03285400C02D3D /* QuestHistory.swift */; };
+		82AEFC102C0330C500C02D3D /* QuestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC0F2C0330C500C02D3D /* QuestStore.swift */; };
 		82DF547E2BFA744F00588C5F /* StepQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547D2BFA744F00588C5F /* StepQuestApp.swift */; };
 		82DF54802BFA744F00588C5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547F2BFA744F00588C5F /* ContentView.swift */; };
 		82DF54842BFA744F00588C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DF54832BFA744F00588C5F /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		82A2F2FE2BFFDDAA00C41ADD /* QuickAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAction.swift; sourceTree = "<group>"; };
 		82A2F3002BFFDE6000C41ADD /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
 		82A2F3032BFFDFE200C41ADD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		82AEFC0B2C03285400C02D3D /* QuestHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestHistory.swift; sourceTree = "<group>"; };
+		82AEFC0F2C0330C500C02D3D /* QuestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestStore.swift; sourceTree = "<group>"; };
 		82DF547A2BFA744F00588C5F /* StepQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DF547D2BFA744F00588C5F /* StepQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepQuestApp.swift; sourceTree = "<group>"; };
 		82DF547F2BFA744F00588C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,8 +111,25 @@
 			isa = PBXGroup;
 			children = (
 				82A2F3032BFFDFE200C41ADD /* Home.swift */,
+				82AEFC0B2C03285400C02D3D /* QuestHistory.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		82AEFC0D2C0330AA00C02D3D /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				82AEFC0E2C0330B100C02D3D /* Store */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		82AEFC0E2C0330B100C02D3D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				82AEFC0F2C0330C500C02D3D /* QuestStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		82DF54712BFA744F00588C5F = {
@@ -130,6 +151,7 @@
 		82DF547C2BFA744F00588C5F /* StepQuest */ = {
 			isa = PBXGroup;
 			children = (
+				82AEFC0D2C0330AA00C02D3D /* Infrastructure */,
 				82A2F3022BFFDFAD00C41ADD /* Screens */,
 				82A2F2F12BFFD6B600C41ADD /* Domain */,
 				82A2F2E82BFFB83B00C41ADD /* Components */,
@@ -223,6 +245,7 @@
 				82A2F2EA2BFFB85400C41ADD /* CustomButton.swift in Sources */,
 				82A2F2EE2BFFCCDD00C41ADD /* Background.swift in Sources */,
 				82A2F2FD2BFFDCDA00C41ADD /* QuickActions.swift in Sources */,
+				82AEFC0C2C03285400C02D3D /* QuestHistory.swift in Sources */,
 				82A2F2F72BFFDA4100C41ADD /* QuestDetails.swift in Sources */,
 				82A2F2FF2BFFDDAA00C41ADD /* QuickAction.swift in Sources */,
 				82DF54902BFA873100588C5F /* QuestObjective.swift in Sources */,
@@ -230,6 +253,7 @@
 				82DF548E2BFA770F00588C5F /* QuestHistoryItem.swift in Sources */,
 				82A2F2EC2BFFBBDB00C41ADD /* StepProgress.swift in Sources */,
 				82A2F3012BFFDE6000C41ADD /* Quest.swift in Sources */,
+				82AEFC102C0330C500C02D3D /* QuestStore.swift in Sources */,
 				82A2F2F42BFFD6C600C41ADD /* ButtonInfo.swift in Sources */,
 				82DF547E2BFA744F00588C5F /* StepQuestApp.swift in Sources */,
 				82A2F2F92BFFDAA300C41ADD /* CharacterType.swift in Sources */,

@@ -15,6 +15,7 @@ struct Background: View {
             endPoint: .bottomLeading
         )
         .edgesIgnoringSafeArea(.all)
+        .ignoresSafeArea()
     }
 }
 
