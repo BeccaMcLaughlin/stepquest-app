@@ -7,16 +7,15 @@
 
 import Foundation
 
-struct Quest: Identifiable {
+struct Quest: Identifiable, Decodable {
     let id: String;
     let details: QuestDetails;
-    var completedDate: Date?;
+    var completedDate: Date? = nil;
 
-    private let dateFormatter = DateFormatter();
-    
     var completedDateString: String {
        get {
            guard let completedDate = completedDate else { return "" }
+           let dateFormatter = DateFormatter();
            dateFormatter.dateFormat = "d MMM yyyy"
            return dateFormatter.string(from: completedDate)
        }

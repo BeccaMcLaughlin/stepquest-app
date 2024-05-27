@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "B93C255C-90F8-4D51-9AB9-AB487530F1F0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:StepQuest.xcodeproj",
+      "identifier" : "82DF54792BFA744F00588C5F",
+      "name" : "StepQuest"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

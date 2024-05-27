@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,12 @@
 		82A2F3042BFFDFE200C41ADD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F3032BFFDFE200C41ADD /* Home.swift */; };
 		82AEFC0C2C03285400C02D3D /* QuestHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC0B2C03285400C02D3D /* QuestHistory.swift */; };
 		82AEFC102C0330C500C02D3D /* QuestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC0F2C0330C500C02D3D /* QuestStore.swift */; };
+		82AEFC122C04E37000C02D3D /* NewQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC112C04E37000C02D3D /* NewQuest.swift */; };
+		82AEFC172C04E48000C02D3D /* QuestDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC162C04E48000C02D3D /* QuestDifficulty.swift */; };
+		82AEFC1A2C04F9C400C02D3D /* QuestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC192C04F9C400C02D3D /* QuestService.swift */; };
+		82AEFC2E2C0502F800C02D3D /* StepQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC2D2C0502F800C02D3D /* StepQuestTests.swift */; };
+		82AEFC342C05033300C02D3D /* QuestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC1E2C05018B00C02D3D /* QuestService.swift */; };
+		82AEFC352C05033800C02D3D /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC232C0501AE00C02D3D /* MockURLProtocol.swift */; };
 		82DF547E2BFA744F00588C5F /* StepQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547D2BFA744F00588C5F /* StepQuestApp.swift */; };
 		82DF54802BFA744F00588C5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547F2BFA744F00588C5F /* ContentView.swift */; };
 		82DF54842BFA744F00588C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DF54832BFA744F00588C5F /* Assets.xcassets */; };
@@ -28,6 +34,16 @@
 		82DF548E2BFA770F00588C5F /* QuestHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF548D2BFA770F00588C5F /* QuestHistoryItem.swift */; };
 		82DF54902BFA873100588C5F /* QuestObjective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF548F2BFA873100588C5F /* QuestObjective.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82AEFC2F2C0502F800C02D3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82DF54722BFA744F00588C5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82DF54792BFA744F00588C5F;
+			remoteInfo = StepQuest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		82A2F2E92BFFB85400C41ADD /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -44,6 +60,14 @@
 		82A2F3032BFFDFE200C41ADD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		82AEFC0B2C03285400C02D3D /* QuestHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestHistory.swift; sourceTree = "<group>"; };
 		82AEFC0F2C0330C500C02D3D /* QuestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestStore.swift; sourceTree = "<group>"; };
+		82AEFC112C04E37000C02D3D /* NewQuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuest.swift; sourceTree = "<group>"; };
+		82AEFC162C04E48000C02D3D /* QuestDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDifficulty.swift; sourceTree = "<group>"; };
+		82AEFC192C04F9C400C02D3D /* QuestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestService.swift; sourceTree = "<group>"; };
+		82AEFC1E2C05018B00C02D3D /* QuestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestService.swift; sourceTree = "<group>"; };
+		82AEFC232C0501AE00C02D3D /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		82AEFC252C05022800C02D3D /* StepQuest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StepQuest.xctestplan; sourceTree = "<group>"; };
+		82AEFC2B2C0502F800C02D3D /* StepQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82AEFC2D2C0502F800C02D3D /* StepQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepQuestTests.swift; sourceTree = "<group>"; };
 		82DF547A2BFA744F00588C5F /* StepQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DF547D2BFA744F00588C5F /* StepQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepQuestApp.swift; sourceTree = "<group>"; };
 		82DF547F2BFA744F00588C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +78,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		82AEFC282C0502F800C02D3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82DF54772BFA744F00588C5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +126,7 @@
 				82A2F2F32BFFD6C600C41ADD /* ButtonInfo.swift */,
 				82A2F2F62BFFDA4100C41ADD /* QuestDetails.swift */,
 				82A2F2F82BFFDAA300C41ADD /* CharacterType.swift */,
+				82AEFC162C04E48000C02D3D /* QuestDifficulty.swift */,
 			);
 			path = ValueObjects;
 			sourceTree = "<group>";
@@ -112,6 +144,7 @@
 			children = (
 				82A2F3032BFFDFE200C41ADD /* Home.swift */,
 				82AEFC0B2C03285400C02D3D /* QuestHistory.swift */,
+				82AEFC112C04E37000C02D3D /* NewQuest.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -119,6 +152,7 @@
 		82AEFC0D2C0330AA00C02D3D /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				82AEFC182C04F9A200C02D3D /* Services */,
 				82AEFC0E2C0330B100C02D3D /* Store */,
 			);
 			path = Infrastructure;
@@ -132,10 +166,54 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		82AEFC182C04F9A200C02D3D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82AEFC192C04F9C400C02D3D /* QuestService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82AEFC1D2C05018B00C02D3D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				82AEFC232C0501AE00C02D3D /* MockURLProtocol.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		82AEFC1F2C05018B00C02D3D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82AEFC1E2C05018B00C02D3D /* QuestService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82AEFC202C05018B00C02D3D /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				82AEFC1F2C05018B00C02D3D /* Services */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		82AEFC2C2C0502F800C02D3D /* StepQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				82AEFC202C05018B00C02D3D /* Infrastructure */,
+				82AEFC1D2C05018B00C02D3D /* Helpers */,
+				82AEFC2D2C0502F800C02D3D /* StepQuestTests.swift */,
+			);
+			path = StepQuestTests;
+			sourceTree = "<group>";
+		};
 		82DF54712BFA744F00588C5F = {
 			isa = PBXGroup;
 			children = (
+				82AEFC252C05022800C02D3D /* StepQuest.xctestplan */,
 				82DF547C2BFA744F00588C5F /* StepQuest */,
+				82AEFC2C2C0502F800C02D3D /* StepQuestTests */,
 				82DF547B2BFA744F00588C5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				82DF547A2BFA744F00588C5F /* StepQuest.app */,
+				82AEFC2B2C0502F800C02D3D /* StepQuestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,7 +240,7 @@
 				82DF54852BFA744F00588C5F /* Preview Content */,
 			);
 			path = StepQuest;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		82DF54852BFA744F00588C5F /* Preview Content */ = {
 			isa = PBXGroup;
@@ -174,6 +253,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		82AEFC2A2C0502F800C02D3D /* StepQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82AEFC312C0502F800C02D3D /* Build configuration list for PBXNativeTarget "StepQuestTests" */;
+			buildPhases = (
+				82AEFC272C0502F800C02D3D /* Sources */,
+				82AEFC282C0502F800C02D3D /* Frameworks */,
+				82AEFC292C0502F800C02D3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82AEFC302C0502F800C02D3D /* PBXTargetDependency */,
+			);
+			name = StepQuestTests;
+			productName = StepQuestTests;
+			productReference = 82AEFC2B2C0502F800C02D3D /* StepQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		82DF54792BFA744F00588C5F /* StepQuest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82DF548A2BFA744F00588C5F /* Build configuration list for PBXNativeTarget "StepQuest" */;
@@ -201,13 +298,17 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					82AEFC2A2C0502F800C02D3D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 82DF54792BFA744F00588C5F;
+					};
 					82DF54792BFA744F00588C5F = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
 			buildConfigurationList = 82DF54752BFA744F00588C5F /* Build configuration list for PBXProject "StepQuest" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -220,11 +321,19 @@
 			projectRoot = "";
 			targets = (
 				82DF54792BFA744F00588C5F /* StepQuest */,
+				82AEFC2A2C0502F800C02D3D /* StepQuestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		82AEFC292C0502F800C02D3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82DF54782BFA744F00588C5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,12 +346,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		82AEFC272C0502F800C02D3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82AEFC352C05033800C02D3D /* MockURLProtocol.swift in Sources */,
+				82AEFC342C05033300C02D3D /* QuestService.swift in Sources */,
+				82AEFC2E2C0502F800C02D3D /* StepQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82DF54762BFA744F00588C5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82AEFC1A2C04F9C400C02D3D /* QuestService.swift in Sources */,
 				82A2F2F02BFFD50000C41ADD /* CharacterWithText.swift in Sources */,
+				82AEFC172C04E48000C02D3D /* QuestDifficulty.swift in Sources */,
 				82A2F2EA2BFFB85400C41ADD /* CustomButton.swift in Sources */,
+				82AEFC122C04E37000C02D3D /* NewQuest.swift in Sources */,
 				82A2F2EE2BFFCCDD00C41ADD /* Background.swift in Sources */,
 				82A2F2FD2BFFDCDA00C41ADD /* QuickActions.swift in Sources */,
 				82AEFC0C2C03285400C02D3D /* QuestHistory.swift in Sources */,
@@ -264,7 +386,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		82AEFC302C0502F800C02D3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82DF54792BFA744F00588C5F /* StepQuest */;
+			targetProxy = 82AEFC2F2C0502F800C02D3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		82AEFC322C0502F800C02D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76AXC6459K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = stepquest.StepQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepQuest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StepQuest";
+			};
+			name = Debug;
+		};
+		82AEFC332C0502F800C02D3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76AXC6459K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = stepquest.StepQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepQuest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StepQuest";
+			};
+			name = Release;
+		};
 		82DF54882BFA744F00588C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,6 +619,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		82AEFC312C0502F800C02D3D /* Build configuration list for PBXNativeTarget "StepQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82AEFC322C0502F800C02D3D /* Debug */,
+				82AEFC332C0502F800C02D3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		82DF54752BFA744F00588C5F /* Build configuration list for PBXProject "StepQuest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

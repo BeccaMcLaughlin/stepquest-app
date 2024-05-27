@@ -19,7 +19,7 @@ struct QuestHistory: View {
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
                 ScrollView {
-                    ForEach(questStore.quests) { quest in QuestHistoryItem(questTitle: quest.details.title, questSteps: quest.details.totalSteps, questCompleted: quest.completedDateString, character: quest.details.character)
+                    ForEach(questStore.quests) { quest in QuestHistoryItem(questTitle: quest.details.title, questSteps: quest.details.steps, questCompleted: quest.completedDateString, character: quest.details.character)
                     }
                 }
             }
@@ -33,32 +33,32 @@ struct QuestHistory: View {
         let store = QuestStore()
         store.addQuest(Quest(
             id: "1",
-            details: QuestDetails(title: "Fungus Foraging", objective: "Test", totalSteps: 500, character: CharacterType.townfolk1),
+            details: QuestDetails(title: "Fungus Foraging", objective: "Test", steps: 500, character: CharacterType.townfolk1),
             completedDate: Date()
         ))
         store.addQuest(Quest(
             id: "2",
-            details: QuestDetails(title: "Feather of the Moonbird", objective: "Test", totalSteps: 500, character: CharacterType.wizard),
+            details: QuestDetails(title: "Feather of the Moonbird", objective: "Test", steps: 500, character: CharacterType.wizard),
             completedDate: Date()
         ))
         store.addQuest(Quest(
             id: "3",
-            details: QuestDetails(title: "The Elder's Message", objective: "Test", totalSteps: 500, character: CharacterType.townfolk2),
+            details: QuestDetails(title: "The Elder's Message", objective: "Test", steps: 500, character: CharacterType.townfolk2),
             completedDate: Date()
         ))
         store.addQuest(Quest(
             id: "4",
-            details: QuestDetails(title: "The Lost Toy", objective: "Test", totalSteps: 500, character: CharacterType.townfolk1),
+            details: QuestDetails(title: "The Lost Toy", objective: "Test", steps: 500, character: CharacterType.townfolk1),
             completedDate: Date()
         ))
         store.addQuest(Quest(
             id: "5",
-            details: QuestDetails(title: "Gone Fishing", objective: "Test", totalSteps: 500, character: CharacterType.townfolk2),
+            details: QuestDetails(title: "Gone Fishing", objective: "Test", steps: 500, character: CharacterType.townfolk2),
             completedDate: Date()
         ))
         store.addQuest(Quest(
             id: "6",
-            details: QuestDetails(title: "Rescue Matilda", objective: "Test", totalSteps: 500, character: CharacterType.townfolk2),
+            details: QuestDetails(title: "Rescue Matilda", objective: "Test", steps: 500, character: CharacterType.townfolk2),
             completedDate: Date()
         ))
         return store

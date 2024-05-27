@@ -30,7 +30,7 @@ struct QuickActions: View {
         let store = QuestStore()
         store.setCurrentQuest(Quest(
             id: "1",
-            details: QuestDetails(title: "Fungus Foraging", objective: "Test", totalSteps: 500, character: CharacterType.townfolk1),
+            details: QuestDetails(title: "Fungus Foraging", objective: "Test", steps: 500, character: CharacterType.townfolk1),
             completedDate: nil
         ))
         return store

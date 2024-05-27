@@ -16,7 +16,9 @@ struct Home: View {
             Background()
             VStack() {
                 QuestHeader(header: questStore.currentQuest?.details.title)
-                StepProgress(currentSteps: currentSteps, totalSteps: questStore.currentQuest?.details.totalSteps ?? 0)
+                if questStore.currentQuest != nil {
+                    StepProgress(currentSteps: currentSteps, totalSteps: questStore.currentQuest?.details.steps ?? 0)
+                }
                 Spacer()
                 QuickActions()
             }
@@ -27,9 +29,10 @@ struct Home: View {
 #Preview {
     let questStore: QuestStore = {
         let store = QuestStore()
+        
         store.setCurrentQuest(Quest(
             id: "1",
-            details: QuestDetails(title: "Fungus Foraging", objective: "Walk 500 steps to find fungus", totalSteps: 500, character: CharacterType.townfolk1),
+            details: QuestDetails(title: "Fungus Foraging", objective: "Walk 500 steps to find fungus", steps: 500, character: CharacterType.townfolk1),
             completedDate: nil
         ))
         return store

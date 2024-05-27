@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct QuestDetails {
+struct QuestDetails: Decodable {
     let title: String;
     let objective: String;
-    let totalSteps: Int;
+    let steps: Int;
     let character: CharacterType;
 }
