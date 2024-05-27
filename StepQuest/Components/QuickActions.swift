@@ -14,7 +14,11 @@ struct QuickActions: View {
         VStack {
             QuestObjective(objective: questStore.currentQuest?.details.objective ?? "None", character: questStore.currentQuest?.details.character ?? CharacterType.wizard)
             HStack {
-                QuickAction(text: "New quest")
+                NavigationLink {
+                    NewQuest()
+                } label: {
+                    QuickAction(text: "New quest")
+                }
                 NavigationLink {
                     QuestHistory()
                 } label: {

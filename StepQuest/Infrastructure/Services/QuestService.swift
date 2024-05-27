@@ -9,7 +9,7 @@ import Foundation
 
 class QuestService {
     func FetchNewQuest(difficulty: QuestDifficulty, completion: @escaping (Result<Quest, Error>) -> Void) {
-        guard let url = URL(string: "https://0.0.0.0:8443/new?difficulty=\(difficulty.rawValue)") else {
+        guard let url = URL(string: "http://localhost:8080/new?difficulty=\(difficulty.rawValue)") else {
             completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
             return
         }

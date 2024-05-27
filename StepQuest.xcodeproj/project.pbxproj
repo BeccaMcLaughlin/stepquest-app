@@ -68,6 +68,7 @@
 		82AEFC252C05022800C02D3D /* StepQuest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StepQuest.xctestplan; sourceTree = "<group>"; };
 		82AEFC2B2C0502F800C02D3D /* StepQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82AEFC2D2C0502F800C02D3D /* StepQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepQuestTests.swift; sourceTree = "<group>"; };
+		82AEFC4A2C052C3D00C02D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		82DF547A2BFA744F00588C5F /* StepQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DF547D2BFA744F00588C5F /* StepQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepQuestApp.swift; sourceTree = "<group>"; };
 		82DF547F2BFA744F00588C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 		82DF547C2BFA744F00588C5F /* StepQuest */ = {
 			isa = PBXGroup;
 			children = (
+				82AEFC4A2C052C3D00C02D3D /* Info.plist */,
 				82AEFC0D2C0330AA00C02D3D /* Infrastructure */,
 				82A2F3022BFFDFAD00C41ADD /* Screens */,
 				82A2F2F12BFFD6B600C41ADD /* Domain */,
@@ -569,6 +571,7 @@
 				DEVELOPMENT_TEAM = 76AXC6459K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepQuest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -598,6 +601,7 @@
 				DEVELOPMENT_TEAM = 76AXC6459K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepQuest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

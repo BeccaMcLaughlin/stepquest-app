@@ -18,7 +18,7 @@ class QuestServiceTests: XCTestCase {
             "objective": "Test objective",
             "title": "Test Title",
             "steps": 500,
-            "character": "townfolk1"
+            "character": "Townfolk1"
         }
     }
     """
