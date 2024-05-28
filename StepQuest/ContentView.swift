@@ -10,8 +10,8 @@ import SwiftData
 
 struct ContentView: View {
     @StateObject private var stepStore = StepStore()
-        @StateObject private var questStore = QuestStore()
-        
+    @StateObject private var questStore = QuestStore()
+    
     
     var body: some View {
         NavigationStack {
@@ -20,6 +20,10 @@ struct ContentView: View {
         .navigationTitle("Quests")
         .environmentObject(questStore)
         .environmentObject(stepStore)
+        .onAppear {
+            questStore.setStepStore(stepStore: stepStore)
+            stepStore.requestHealthKitAuthorization()
+        }
     }
 }
 

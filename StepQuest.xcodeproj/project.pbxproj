@@ -29,6 +29,7 @@
 		82AEFC352C05033800C02D3D /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC232C0501AE00C02D3D /* MockURLProtocol.swift */; };
 		82AEFC4D2C05317600C02D3D /* CurrentQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC4C2C05317600C02D3D /* CurrentQuest.swift */; };
 		82AEFC4F2C067AD400C02D3D /* StepStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC4E2C067AD400C02D3D /* StepStore.swift */; };
+		82AEFC512C067C7B00C02D3D /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEFC502C067C7B00C02D3D /* HealthKitService.swift */; };
 		82DF547E2BFA744F00588C5F /* StepQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547D2BFA744F00588C5F /* StepQuestApp.swift */; };
 		82DF54802BFA744F00588C5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF547F2BFA744F00588C5F /* ContentView.swift */; };
 		82DF54842BFA744F00588C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DF54832BFA744F00588C5F /* Assets.xcassets */; };
@@ -73,6 +74,8 @@
 		82AEFC4A2C052C3D00C02D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		82AEFC4C2C05317600C02D3D /* CurrentQuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentQuest.swift; sourceTree = "<group>"; };
 		82AEFC4E2C067AD400C02D3D /* StepStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepStore.swift; sourceTree = "<group>"; };
+		82AEFC502C067C7B00C02D3D /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		82AEFC522C06814000C02D3D /* StepQuest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepQuest.entitlements; sourceTree = "<group>"; };
 		82DF547A2BFA744F00588C5F /* StepQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DF547D2BFA744F00588C5F /* StepQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepQuestApp.swift; sourceTree = "<group>"; };
 		82DF547F2BFA744F00588C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -177,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				82AEFC192C04F9C400C02D3D /* QuestService.swift */,
+				82AEFC502C067C7B00C02D3D /* HealthKitService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -237,6 +241,7 @@
 		82DF547C2BFA744F00588C5F /* StepQuest */ = {
 			isa = PBXGroup;
 			children = (
+				82AEFC522C06814000C02D3D /* StepQuest.entitlements */,
 				82AEFC4A2C052C3D00C02D3D /* Info.plist */,
 				82AEFC0D2C0330AA00C02D3D /* Infrastructure */,
 				82A2F3022BFFDFAD00C41ADD /* Screens */,
@@ -376,6 +381,7 @@
 				82A2F2EE2BFFCCDD00C41ADD /* Background.swift in Sources */,
 				82A2F2FD2BFFDCDA00C41ADD /* QuickActions.swift in Sources */,
 				82AEFC0C2C03285400C02D3D /* QuestHistory.swift in Sources */,
+				82AEFC512C067C7B00C02D3D /* HealthKitService.swift in Sources */,
 				82AEFC4F2C067AD400C02D3D /* StepStore.swift in Sources */,
 				82A2F2F72BFFDA4100C41ADD /* QuestDetails.swift in Sources */,
 				82A2F2FF2BFFDDAA00C41ADD /* QuickAction.swift in Sources */,
@@ -573,6 +579,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepQuest/StepQuest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepQuest/Preview Content\"";
@@ -580,6 +587,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StepQuest/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to HealthKit data to track your steps and provide personalized quest recommendations.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need access to HealthKit data to track your steps and provide personalized quest recommendations.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -603,6 +612,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepQuest/StepQuest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepQuest/Preview Content\"";
@@ -610,6 +620,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StepQuest/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to HealthKit data to track your steps and provide personalized quest recommendations.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need access to HealthKit data to track your steps and provide personalized quest recommendations.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

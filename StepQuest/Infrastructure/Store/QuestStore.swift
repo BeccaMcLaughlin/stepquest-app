@@ -6,7 +6,7 @@ class QuestStore: ObservableObject {
     @Published var currentQuest: Quest?;
     @Published var questDifficulty: QuestDifficulty = QuestDifficulty.easy;
     
-    let stepStore: StepStore? = nil
+    var stepStore: StepStore? = nil
     
     func setCurrentQuest(_ quest: Quest) {
         DispatchQueue.main.async {
@@ -19,5 +19,9 @@ class QuestStore: ObservableObject {
         DispatchQueue.main.async {
             self.quests.append(quest)
         }
+    }
+    
+    func setStepStore(stepStore: StepStore) {
+        self.stepStore = stepStore
     }
 }
