@@ -7,14 +7,14 @@ class QuestStore: ObservableObject {
     @Published var questDifficulty: QuestDifficulty = QuestDifficulty.easy;
     
     func setCurrentQuest(_ quest: Quest) {
-        currentQuest = quest;
+        DispatchQueue.main.async {
+            self.currentQuest = quest;
+        }
     }
     
     func addQuest(_ quest: Quest) {
-        quests.append(quest)
-    }
-    
-    func removeQuest(at index: Int) {
-        quests.remove(at: index)
+        DispatchQueue.main.async {
+            self.quests.append(quest)
+        }
     }
 }

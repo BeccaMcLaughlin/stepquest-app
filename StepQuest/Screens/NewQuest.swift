@@ -28,8 +28,9 @@ struct NewQuest: View {
             }
         }
         .navigationDestination(isPresented: $navigateToHome) {
-            Home(currentSteps: 0)
+            CurrentQuest()
                 .environmentObject(questStore)
+                .navigationBarBackButtonHidden(true)
         }
     }
 
