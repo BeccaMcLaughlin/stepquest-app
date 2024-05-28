@@ -9,7 +9,9 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @StateObject private var questStore = QuestStore()
+    @StateObject private var stepStore = StepStore()
+        @StateObject private var questStore = QuestStore()
+        
     
     var body: some View {
         NavigationStack {
@@ -17,6 +19,7 @@ struct ContentView: View {
         }
         .navigationTitle("Quests")
         .environmentObject(questStore)
+        .environmentObject(stepStore)
     }
 }
 

@@ -6,16 +6,12 @@ class QuestStore: ObservableObject {
     @Published var currentQuest: Quest?;
     @Published var questDifficulty: QuestDifficulty = QuestDifficulty.easy;
     
-    let stepStore: StepStore
-    
-    init(stepStore: StepStore) {
-        self.stepStore = stepStore
-    }
+    let stepStore: StepStore? = nil
     
     func setCurrentQuest(_ quest: Quest) {
         DispatchQueue.main.async {
             self.currentQuest = quest
-            self.stepStore.resetCurrentSteps()
+            self.stepStore?.resetCurrentSteps()
         }
     }
     
