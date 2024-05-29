@@ -27,10 +27,10 @@ struct CurrentQuest: View {
                 }
                 Spacer()
                 NavigationLink {
-                    Home(currentSteps: 0)
+                    Home()
                         .navigationBarBackButtonHidden(true)
                 } label: {
-                    Text("Back")
+                    Text("Okay")
                         .foregroundColor(.white)
                         .padding()
                         .frame(maxWidth: .infinity)

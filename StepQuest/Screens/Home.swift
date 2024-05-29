@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Home: View {
     @EnvironmentObject var questStore: QuestStore
-    let currentSteps: Int;
+    @EnvironmentObject var stepStore: StepStore
     
     var body: some View {
         ZStack {
@@ -17,11 +17,14 @@ struct Home: View {
             VStack() {
                 QuestHeader(header: questStore.currentQuest?.details.title)
                 if questStore.currentQuest != nil {
-                    StepProgress(currentSteps: currentSteps, totalSteps: questStore.currentQuest?.details.steps ?? 0)
+                    StepProgress(currentSteps: stepStore.currentSteps, totalSteps: questStore.currentQuest?.details.steps ?? 0)
                 }
                 Spacer()
                 QuickActions()
             }
+        }
+        .onAppear {
+            stepStore.requestHealthKitAuthorization(currentQuest: questStore.currentQuest)
         }
     }
 }
@@ -32,11 +35,15 @@ struct Home: View {
         
         store.setCurrentQuest(Quest(
             id: "1",
-            details: QuestDetails(title: "Fungus Foraging", objective: "Walk 500 steps to find fungus", steps: 500, character: CharacterType.townfolk1),
-            completedDate: nil
+            details: QuestDetails(title: "Fungus Foraging", objective: "Walk 500 steps to find fungus", steps: 500, character: CharacterType.townfolk1)
         ))
         return store
     }()
     
-    return Home(currentSteps: 258).environmentObject(questStore)
+    let stepStore = StepStore()
+    stepStore.setCurrentSteps(250)
+    
+    return Home()
+        .environmentObject(questStore)
+        .environmentObject(stepStore)
 }

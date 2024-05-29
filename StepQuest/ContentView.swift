@@ -15,14 +15,14 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            Home(currentSteps: 0)
+            Home()
         }
         .navigationTitle("Quests")
         .environmentObject(questStore)
         .environmentObject(stepStore)
         .onAppear {
             questStore.setStepStore(stepStore: stepStore)
-            stepStore.requestHealthKitAuthorization()
+            stepStore.requestHealthKitAuthorization(currentQuest: questStore.currentQuest)
         }
     }
 }

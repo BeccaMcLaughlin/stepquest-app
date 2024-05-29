@@ -24,18 +24,20 @@ class StepStore: ObservableObject {
         }
     }
     
-    func requestHealthKitAuthorization() {
+    func requestHealthKitAuthorization(currentQuest: Quest?) {
         healthKitService.requestAuthorization { success, error in
             if success {
-                self.fetchSteps()
+                if (currentQuest != nil ) {
+                    self.fetchSteps(currentQuest: currentQuest!)
+                }
             } else {
                 print("HealthKit authorization failed: \(String(describing: error))")
             }
         }
     }
     
-    private func fetchSteps() {
-        healthKitService.fetchSteps { steps, error in
+    private func fetchSteps(currentQuest: Quest) {
+        healthKitService.fetchSteps(startDate: currentQuest.startDate, endDate: Date()) { steps, error in
             if let steps = steps {
                 self.setCurrentSteps(steps)
             } else {

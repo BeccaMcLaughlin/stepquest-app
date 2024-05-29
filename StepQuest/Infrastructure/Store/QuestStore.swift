@@ -12,6 +12,7 @@ class QuestStore: ObservableObject {
         DispatchQueue.main.async {
             self.currentQuest = quest
             self.stepStore?.resetCurrentSteps()
+            self.stepStore?.requestHealthKitAuthorization(currentQuest: self.currentQuest)
         }
     }
     
